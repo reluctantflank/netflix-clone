@@ -24,7 +24,7 @@ const Navbar = () => {
 			<div className="nav-content">
 				<img
 					className="nav-logo"
-					src="/images/nav-logo.png"
+					src="/images/netflix.png"
 					alt="netflix-logo"
 				/>
 				<img
