@@ -20,12 +20,11 @@ const Login = () => {
 
 				<div className="login-screen-gradient" />
 			</div>
-
 			<div className="login-screen-body">
 				{signIn ? (
 					<SignUpScreen />
 				) : (
-					<>
+					<div className="login-screen-body">
 						<h1>Unlimited films, TV programmes and more.</h1>
 						<h2>Watch anywhere. Cancel at any time</h2>
 						<h3>
@@ -42,7 +41,7 @@ const Login = () => {
 								</button>
 							</form>
 						</div>
-					</>
+					</div>
 				)}
 			</div>
 		</div>

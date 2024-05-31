@@ -2,7 +2,6 @@
 
 .login-screen {
 	position: relative;
-	height: 100%;
 	background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
 		center no-repeat;
 	background-size: cover;
@@ -19,6 +18,10 @@
 	padding: 20px;
 	left: 0;
 	right: 0;
+}
+
+.login-screen-content {
+	object-fit: contain;
 }
 
 .login-screen-body > h1 {
@@ -75,21 +78,73 @@
 	padding: 10px;
 	outline-width: 0;
 	height: 30px;
-	width: 30%;
+	width: 50%;
 	border: none;
 	max-width: 600px;
 }
 
-.login-screen-input{
-    margin: 20px;
+.login-screen-input {
+	margin: 30px;
 }
 
 .login-screen-get-started-button {
 	padding: 16px 20px;
+	padding-top: 15px;
 	font-size: 1rem;
 	color: #fff;
 	background-color: #e50914;
 	border: none;
 	font-weight: 600;
 	cursor: pointer;
+	height: 50px;
+}
+
+@media (max-width: 620px) {
+	.login-screen-body {
+		top: 20%;
+	}
+
+	.login-screen-body > h1 {
+		font-size: 45px;
+		margin-bottom: 20px;
+	}
+
+	.login-screen-body > h2 {
+		font-size: 28px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+
+	.login-screen-body > h3 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.login-screen-input > form > input {
+		padding: 10px;
+		outline-width: 0;
+		height: 30px;
+		width: 50%;
+		border: none;
+	}
+
+	.login-screen-input {
+		margin: 20px;
+	}
+
+	.login-screen-get-started-button {
+		padding: 16px 20px;
+		padding-top: 15px;
+		font-size: 1rem;
+		color: #fff;
+		background-color: #e50914;
+		border: none;
+		font-weight: 300;
+		cursor: pointer;
+	}
+
+	.login-screen-input > form > input {
+		padding: 10px;
+		width: 50%;
+	}
 }
