@@ -57,13 +57,12 @@
 	padding-bottom: 0.5rem;
 }
 
-.banner-button:hover{
-    color: #000;
-    background-color: #e6e6e6;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
+.banner-button:hover {
+	color: #000;
+	background-color: #e6e6e6;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
 }
-
