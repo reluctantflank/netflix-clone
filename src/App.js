@@ -38,7 +38,7 @@ function App() {
 					<Route
 						exact
 						path="/login"
-						element={user ? <HomeScreen /> : <Login />}
+						element={user ? <ProfileScreen /> : <Login />}
 					/>
 					<Route
 						exact
@@ -46,7 +46,12 @@ function App() {
 						element={user ? <ProfileScreen /> : <Login />}
 					/>
 
-					<Route exact path="/" element={user ? <HomeScreen /> : <Login />} />
+					<Route
+						exact
+						path="/"
+						element={user ? <ProfileScreen /> : <Login />}
+					/>
+					<Route path="/home" element={<HomeScreen />} />
 				</Routes>
 			</Router>
 		</div>

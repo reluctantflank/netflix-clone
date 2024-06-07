@@ -1,65 +1,117 @@
 /** @format */
 
-.profile-screen {
-	height: 100vh;
-	color: white;
-}
-
-.profile-screen-body {
+.container {
 	display: flex;
 	flex-direction: column;
-
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 8%;
-	max-width: 800px;
+	align-items: center;
 	justify-content: center;
-}
-
-.profile-screen-info {
-	display: flex;
-}
-
-.profile-screen-details {
+	height: 100vh;
+	background-color: #141414;
 	color: white;
-	margin-left: 25px;
-	flex: 1;
-}
-.profile-screen-body > h1 {
-	font-size: 60px;
-	font-weight: 400;
-	border-bottom: 1px solid #282c2d;
-	margin-bottom: 20px;
+	text-align: center;
 }
 
-.profile-screen-details > h2 {
-	background-color: gray;
-	padding: 15px;
-	font-size: 15px;
-	padding-left: 20px;
+.title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	font-size: 3.5vw;
+	font-weight: unset;
 }
 
-.profile-screen-sign-out {
-	padding: 10px 20px;
-	font-size: 1rem;
-	margin-top: 5%;
-	width: 100%;
-	color: #fff;
-	background-color: #e50914;
-	font-weight: 600;
-	border: none;
+.profiles {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile:hover img, .profile:hover p {
+	border:white;
+	color: white;
 	cursor: pointer;
 }
 
-.profile-screen-plans{
-margin-top: 20px;
-} 
-
-.profile-screen-plans > h3 {
-	border-bottom: 1px solid #28262d;
-	padding-bottom: 10px;
+.profile:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	
 }
-.profile-screen-info > img {
+
+.profile:hover.title {
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.profile-img {
+	width: 100px;
 	height: 100px;
+	border-radius: 8px;
+}
+
+.profile-name {
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	color: gray;
+}
+
+.manage-button {
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid gray;
+	background: transparent;
+	color: gray;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.manage-button:hover {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.profile-img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.profile-name {
+		font-size: 0.875rem;
+	}
+
+	.manage-button {
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.title {
+		font-size: 1.25rem;
+	}
+
+	.profile-img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.profile-name {
+		font-size: 0.75rem;
+	}
+
+	.manage-button {
+		padding: 0.5rem;
+	}
 }

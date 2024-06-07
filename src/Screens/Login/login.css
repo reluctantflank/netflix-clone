@@ -99,14 +99,14 @@
 	height: 50px;
 }
 
-@media (max-width: 620px) {
+/* @media (max-width: 620px) {
 	.login-screen-body {
 		top: 20%;
 	}
 
 	.login-screen-body > h1 {
 		font-size: 45px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.login-screen-body > h2 {
@@ -147,4 +147,55 @@
 		padding: 10px;
 		width: 50%;
 	}
+} */
+
+@media (max-width: 767px) {
+  .login-screen-body {
+    top: 20%;
+    padding: 5px;
+  }
+  .login-screen-input {
+    margin: 15px;
+  }
+  .login-screen-input > form > input {
+    width: 60%;
+  }
+  .login-screen-get-started-button {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+  
+	.login-screen-body > h1 {
+		font-size: 45px;
+		margin-bottom: 10px;
+	}
+
+	.login-screen-body > h2 {
+		font-size: 28px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+
+	.login-screen-body > h3 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .login-screen-body {
+    top: 25%;
+    padding: 15px;
+  }
+  .login-screen-input {
+    margin: 25px;
+  }
+  .login-screen-input > form > input {
+    width: 70%;
+  }
+  .login-screen-get-started-button {
+    font-size: 0.9rem;
+    padding: 14px 18px;
+  }
 }
