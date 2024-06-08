@@ -53,7 +53,7 @@
 .login-screen-body > h1 {
 	font-size: 3.125rem;
 	margin-bottom: 20px;
-	font-weight: 600;
+	
 }
 .login-screen-body > h2 {
 	font-size: 2rem;
@@ -70,7 +70,7 @@
 }
 
 .login-screen-input > form > input {
-	padding:28px;
+	padding:10px;
 	outline-width: 0;
 	height: 30px;
 	width: 30%;
