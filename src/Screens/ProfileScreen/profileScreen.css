@@ -31,8 +31,9 @@
 	align-items: center;
 }
 
-.profile:hover img, .profile:hover p {
-	border:white;
+.profile:hover img,
+.profile:hover p {
+	border: white;
 	color: white;
 	cursor: pointer;
 }
@@ -42,14 +43,12 @@
 	transition: 0.2s;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	color: #fff;
-	
 }
 
 .profile:hover.title {
 	color: #fff;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 
 .profile-img {
 	width: 100px;
@@ -76,42 +75,4 @@
 .manage-button:hover {
 	color: #fff;
 	border: 1px solid #fff;
-}
-
-@media (max-width: 768px) {
-	.title {
-		font-size: 1.5rem;
-	}
-
-	.profile-img {
-		width: 80px;
-		height: 80px;
-	}
-
-	.profile-name {
-		font-size: 0.875rem;
-	}
-
-	.manage-button {
-		padding: 0.5rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.title {
-		font-size: 1.25rem;
-	}
-
-	.profile-img {
-		width: 60px;
-		height: 60px;
-	}
-
-	.profile-name {
-		font-size: 0.75rem;
-	}
-
-	.manage-button {
-		padding: 0.5rem;
-	}
 }

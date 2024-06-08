@@ -29,7 +29,7 @@
 }
 
 .banner-fade-bottom {
-	height: 7.4rem;
+	height: 260px;
 	background-image: linear-gradient(
 		180deg,
 		transparent,
@@ -45,10 +45,6 @@
 	border: none;
 	font-weight: 700;
 	border-radius: 0.2vw;
-	-webkit-border-radius: 0.2vw;
-	-moz-border-radius: 0.2vw;
-	-ms-border-radius: 0.2vw;
-	-o-border-radius: 0.2vw;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	margin-right: 1rem;

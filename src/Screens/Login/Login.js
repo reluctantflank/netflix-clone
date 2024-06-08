@@ -14,7 +14,9 @@ const Login = () => {
 					alt="netflix-logo"
 					className="login-screen-logo"
 				/>
-				<button className="login-screen-button" onClick={() => setSignIn(true)}>
+				<button
+					className="login-screen-sign-in-button"
+					onClick={() => setSignIn(true)}>
 					Sign In
 				</button>
 
@@ -25,22 +27,24 @@ const Login = () => {
 					<SignUpScreen />
 				) : (
 					<div className="login-screen-body">
-						<h1>Unlimited films, TV programmes and more.</h1>
-						<h2>Watch anywhere. Cancel at any time</h2>
-						<h3>
-							Ready to watch? Enter your email to create or restart you
-							membership.
-						</h3>
-						<div className="login-screen-input">
-							<form>
-								<input type="email" placeholder="Email Address" />
-								<button
-									onClick={() => setSignIn(true)}
-									className="login-screen-get-started-button">
-									GET STARTED
-								</button>
-							</form>
-						</div>
+						<>
+							<h1>Unlimited films, TV programmes and more.</h1>
+							<h2>Watch anywhere. Cancel at any time</h2>
+							<h3>
+								Ready to watch? Enter your email to create or restart you
+								membership.
+							</h3>
+							<div className="login-screen-input">
+								<form>
+									<input type="email" placeholder="Email Address" />
+									<button
+										onClick={() => setSignIn(true)}
+										className="login-screen-get-started-button">
+										GET STARTED
+									</button>
+								</form>
+							</div>
+						</>
 					</div>
 				)}
 			</div>
