@@ -117,6 +117,7 @@
 	.login-screen-input > form > input {
 		width: 30%;
 		padding: 9px;
+		border-radius: 0;
 	}
 	.login-screen-get-started-button {
 		font-size: 0.8rem;
@@ -151,6 +152,7 @@
 	.login-screen-input > form > input {
 		width: 30%;
 		padding: 9px;
+		border-radius: 0;
 	}
 	.login-screen-get-started-button {
 		font-size: 0.9rem;
