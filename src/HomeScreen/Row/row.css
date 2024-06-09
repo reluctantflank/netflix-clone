@@ -3,8 +3,6 @@
 .row {
 	color: white;
 	margin-left: 20px;
-	
-
 }
 
 .row-posters {
@@ -40,4 +38,52 @@
 .row-poster-large:hover {
 	transform: scale(1.09);
 	opacity: 1;
+}
+
+@media (max-width: 768px){
+  .row{
+	margin-left: 10px;
+ }
+
+ .row-posters{
+	padding: 10px;
+
+ }
+
+ .row > h2{
+	font-size: 20px;
+ }
+
+ .row-poster{
+	height: 150px;
+	width: 170px;
+ }
+
+ .row-poster-large {
+	padding-bottom: 10px;
+}
+}
+
+@media (max-width: 375px){
+ .row{
+	margin-left: 10px;
+ }
+
+ .row > h2{
+	font-size: 15px;
+ } 
+
+ .row-posters{
+	padding: 10px;
+
+ }
+
+ .row-poster{
+	height: 100px;
+	width: 130px;
+ }
+
+ .row-poster-large {
+	padding-bottom: 10px;
+}
 }

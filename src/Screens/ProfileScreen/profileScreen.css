@@ -1,5 +1,8 @@
 /** @format */
 
+
+
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -9,6 +12,7 @@
 	background-color: #141414;
 	color: white;
 	text-align: center;
+	margin: 0;
 }
 
 .title {
@@ -75,4 +79,31 @@
 .manage-button:hover {
 	color: #fff;
 	border: 1px solid #fff;
+}
+
+
+@media (max-width: 768px) {
+ .profile-img {
+	width: 75px;
+	height: 75px;
+	border-radius: 8px;
+}
+
+.profile-name {
+	margin-top: 0.3rem;
+	font-size: 0.9rem;
+	color: gray;
+}
+
+.profiles{
+	gap: 10px;
+}
+}
+
+@media (max-width: 375px){
+	
+	.title {
+	font-size: 1.3rem;
+}
+
 }
