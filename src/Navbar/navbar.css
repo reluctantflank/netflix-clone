@@ -64,6 +64,10 @@
 	width: 35px;
 }
 
+.navbar-right p {
+	cursor: pointer;
+}
+
 .navbar-profile {
 	display: flex;
 	position: relative;
@@ -216,7 +220,7 @@
 	.navbar-right {
 		gap: 15px;
 	}
-	.navbar-right .profile{
+	.navbar-right .profile {
 		width: 25px;
 	}
 	p {
@@ -274,7 +278,7 @@
 		width: 8px;
 	}
 
-	.navbar-right .profile{
+	.navbar-right .profile {
 		width: 25px;
 	}
 
